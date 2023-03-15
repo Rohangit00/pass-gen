@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+         <span id="text">Sample Password</span>
+         <button id="copy"> Copy </button>
+        </div>
+        <div class="form-control">
+       <label for="length">Length</label>
+       <input id="length" value="15" type ="number" min ="4" max="25"/> 
+       </div>
+       <div class="form-control">
+       <label for="Uppercase">Contain UpperCase Characters</label>
+       <input id ="upper" type ="checkbox">
+       </div> 
+       <div class="form-control">
+       <label for="Lowercase">Contain LowerCase Characters</label>
+       <input id="lower" type ="checkbox"> 
+       </div>
+       <div class="form-control">
+       <label for="Numbers">Contain Numbers</label>
+       <input id="numbers" type ="checkbox">
+       </div> 
+       <div class="form-control">
+       <label for="Symbols">Contain Symbols</label>
+       <input id="symbols" type ="checkbox"> 
+       </div>
+       <button class="generate" id="generate">
+        Generate Password
+       </button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
